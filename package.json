@@ -6,6 +6,7 @@
     "scripts": {
         "test": "jest --silent",
         "test:debug": "jest",
+        "start": "npm-run-all --parallel start:client start:server",
         "start:client": "serve ./client",
         "start:server": "json-server --watch ./server/db.json --port 3333"
     },
